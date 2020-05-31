@@ -1,0 +1,28 @@
+<?php
+$email = filter_input(INPUT_POST, 'email');
+$gender = filter_input(INPUT_POST, 'gender');
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<?php
+if (!empty($email) && isset($gender)){
+    echo "Formulář byl odeslán ";
+    } else {
+echo "Stráka byla načtena bez odeslaného formuláře!";
+    }
+?>
+
+
+</body>
+</html>
